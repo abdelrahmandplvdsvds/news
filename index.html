@@ -1,0 +1,1066 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Soul of Palestine</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="bootstrap.css">
+    <link rel="icon" href="17136391762477.icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        :root {
+    font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+    line-height: 1.5;
+    font-weight: 400;
+  
+    color: black;
+    background-color: whitesmoke;
+  
+    font-synthesis: none;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  
+  body {
+    margin: 0;
+    display: flex;
+    place-items: center;
+    min-width: 320px;
+    min-height: 100vh;
+  }
+  
+  .bouncing-blob {
+    width: 32vw;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    will-change: transform;
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    transform-origin: left top;
+  }
+  
+  .bouncing-blob--blue {
+    background: #52e09e;
+  }
+  
+  .bouncing-blob--white {
+    background: #ffffff;
+    z-index: 2;
+    width: 15vw;
+  }
+  
+  .bouncing-blob--purple {
+    background: #ec4c46;
+  }
+  
+  .bouncing-blob--pink {
+    background: #a1ecb8;
+  }
+  
+  .bouncing-blobs-container {
+    position: fixed;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+  
+  .bouncing-blobs-glass {
+    position: absolute;
+    z-index: 2;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    backdrop-filter: blur(140px);
+    -webkit-backdrop-filter: blur(140px);
+    pointer-events: none;
+  }
+  
+  .bouncing-blobs {
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+  
+  .hero {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+  
+  .hero h2 {
+    font-size: 70px;
+    max-width: 800px;
+    line-height: 1;
+    text-align: center;
+    font-weight: bold;
+    text-transform: capitalize;
+    margin-bottom: 20px;
+    color: #021123;
+  }
+  
+  .hero p {
+    font-size: 24px;
+    max-width: 500px;
+    text-align: center;
+    color: #021123;
+  }
+  
+  @media (max-width: 1200px) {
+    .bouncing-blobs-glass {
+      backdrop-filter: blur(120px);
+      -webkit-backdrop-filter: blur(120px);
+    }
+  }
+  
+  @media (max-width: 500px) {
+    .bouncing-blob {
+      width: 60vw;
+    }
+    .bouncing-blob--white {
+      width: 30vw;
+    }
+    .bouncing-blobs-glass {
+      backdrop-filter: blur(90px);
+      -webkit-backdrop-filter: blur(90px);
+    }
+  
+    .hero h2 {
+      font-size: 32px;
+    }
+  
+    .hero p {
+      font-size: 16px;
+      padding: 0 20px;
+    }
+  }
+  
+  .tutorial-link a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    font-size: 20px;
+    text-decoration: none;
+    font-weight: 600;
+    gap: 0 5px;
+    border: 2px solid;
+    border-radius: 5px;
+    padding: 4px 10px;
+  }
+  
+  .tutorial-link svg {
+    width: 30px;
+  }
+  
+  @media(max-width: 500px) {
+    .tutorial-link a {
+      font-size: 14px;
+      padding: 2px 4px;
+    }
+    .tutorial-link svg {
+      width: 15px;
+    }
+  }
+    </style>
+</head>
+<body class="bg-transparent">
+
+    <h1></h1>
+
+
+    <div class="bouncing-blobs-container">
+        <div class="bouncing-blobs-glass"></div>
+        <div class="bouncing-blobs">
+          <div class="bouncing-blob bouncing-blob--blue"></div>
+          <div class="bouncing-blob bouncing-blob--blue"></div>
+          <div class="bouncing-blob bouncing-blob--blue"></div>
+          <div class="bouncing-blob bouncing-blob--white"></div>
+          <div class="bouncing-blob bouncing-blob--purple"></div>
+          <div class="bouncing-blob bouncing-blob--purple"></div>
+          <div class="bouncing-blob bouncing-blob--pink"></div>
+        </div>
+      </div>
+      <div class="hero">
+
+
+
+    <div class="container" >
+<!-- nav -->
+
+<nav class="navbar navbar-expand-lg bg-transparent-tertiary" style="z-index: 1;">
+  <div class="container-fluid">
+    <img src="1713639176247.png" alt="" style="margin-top: 7px;width: 90px;">
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+      <div class="navbar-nav">
+        <a class="nav-link active" aria-current="page" href="../html/home.html">Home</a>
+        <a class="nav-link" href="../pos/index.html">News</a>
+        <a class="nav-link" href="../index/index.html">County products</a>
+        <a class="nav-link " href="../شرح/New Text Document.html">explain</a>
+      </div>
+    </div>
+  </div>
+</nav>
+
+<!-- nav -->
+        <h1 style="text-align: right; padding: 40px;">بعض الاخبار عن فلسطين</h1>
+        <div class="row"  >
+
+
+
+<!-- ملصق اخباري -->
+            <div class="col-12" style="display: flex; justify-content: center; margin: 10px 0;">
+                <div class="card shadow-sm" style="max-width: 800px;">
+                    <img src="AA-20240420-34319101-34319099-ISRAELI_ATTACKS_CONTINUE_ON_GAZA_STRIP.webp" alt="" >
+                  <div class="card-body" >
+                    <p class="card-text" dir="rtl" style="margin: auto; text-align: right;" >أعلنت وزارة الصحة في قطاع غزة اليوم السبت ارتفاع حصيلة ضحايا العدوان الإسرائيلي المستمر منذ 7 أكتوبر/ تشرين الأول الماضي، إلى 34049 شهيدًا و76901 مصاب.
+
+                        وكشفت الوزارة في تقريرها الإحصائي اليومي، أن قوات الاحتلال الإسرائيلي ارتكبت "4 مجازر ضد العائلات في قطاع غزة خلال الساعات الأربع والعشرين الماضية، وصل منها للمستشفيات 37 شهيدًا و68 إصابة".</p>
+                    <div class="d-flex justify-content-between align-items-center">
+                        <div class="sol">
+                            <div class="view">
+                                <i class="fa-solid fa-eye"></i><small>234k</small>
+                            </div>
+                            <div class="heart">
+                                <i class="fa-solid fa-heart" id="heart1"></i><small>193k</small>
+                            </div>
+
+                            <div class="com">
+                                <i class="fa-solid fa-comment" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample"></i><small>75k</small>
+                            </div>
+                        </div>
+                    </div>
+<!-- اكتب تعليق -->
+                        </p>
+                        <div class="collapse" id="collapseExample">
+                        <div class="card card-body">
+
+                            <form action="">
+                                <div class="mb-3" dir="rtl">
+                                    <label for="exampleFormControlTextarea1" class="form-label">اكتب تعليق:</label>
+                                    <br>
+                                    <i class="fa-solid fa-user"></i><p style="display: inline-block; padding: 10px;">username</p>
+                                    <br>
+                                    <textarea class="form-control"  id="txt" rows="3"></textarea >
+                                    <br>
+                                    <div class="button"></div>
+                                    <button type="submit" class="btn btn-primary" style="width: 100%;">نشر</button>
+                        
+                                </div>
+                            </form>
+
+                        </div>
+                        </div>
+
+<!-- اكتب تعليق -->
+                  </div>
+                </div>
+              </div>
+<!-- مصق اخباري -->
+
+
+
+
+
+
+<!-- مصق اخباري -->
+<div class="col-12" style="display: flex; justify-content: center; margin: 10px 0;">
+    <div class="card shadow-sm" style="max-width: 800px;">
+        <img src="GLlltAlbIAAamil.webp" alt="" >
+      <div class="card-body">
+        <p class="card-text" dir="rtl" style="margin: auto; text-align: right;">أعلنت حكومة باربادوس، إحدى دول منطقة الكاريبي، اليوم السبت الاعتراف بدولة فلسطين، في خطوة لاقت ترحيبًا فلسطينيًا، لا سيما وأن الخطوة تأتي بعد يومين من استخدام الولايات المتحدة الأميركية حق النقض "الفيتو" في مجلس الأمن ضد مشروع قرار جزائري لمنح فلسطين العضوية الكاملة في الأمم المتحدة.
+
+            وقال وزير خارجية باربادوس كيري سيموندز في بيان اليوم: إن بلاده قررت الاعتراف بدولة فلسطين.</p>
+        <div class="d-flex justify-content-between align-items-center">
+            <div class="sol">
+                <div class="view">
+                    <i class="fa-solid fa-eye"></i><small>90k</small>
+                </div>
+                <div class="heart">
+                    <i class="fa-solid fa-heart" id="heart2"></i><small>66k</small>
+                </div>
+
+                <div class="com">
+                    <i class="fa-solid fa-comment" data-bs-toggle="collapse" href="#collapseExample1" role="button" aria-expanded="false" aria-controls="collapseExample"></i><small>45k</small>
+                </div>
+            </div>
+        </div>
+<!-- اكتب تعليق -->
+            </p>
+            <div class="collapse" id="collapseExample1">
+            <div class="card card-body">
+
+                <form action="">
+                    <div class="mb-3" dir="rtl" style="margin: auto; text-align: right;">
+                        <label for="exampleFormControlTextarea1" class="form-label">اكتب تعليق:</label>
+                        <br>
+                        <i class="fa-solid fa-user"></i><p style="display: inline-block; padding: 10px;">username</p>
+                        <br>
+                        <textarea class="form-control"  id="txt" rows="3"></textarea >
+                        <br>
+                        <div class="button"></div>
+                        <button type="submit" class="btn btn-primary" style="width: 100%;">نشر</button>
+            
+                    </div>
+                </form>
+
+            </div>
+            </div>
+
+<!-- اكتب تعليق -->
+      </div>
+    </div>
+  </div>
+<!-- مصق اخباري -->
+
+
+
+
+
+
+
+
+<!-- مصق اخباري -->
+<div class="col-12" style="display: flex; justify-content: center; margin: 10px 0;">
+    <div class="card shadow-sm" style="max-width: 800px;">
+        <img src="GettyImages-2147936978.webp" alt="" >
+      <div class="card-body">
+        <p class="card-text" dir="rtl" style="margin: auto; text-align: right;">غارات جوية إسرائيلية استهدفت أراضٍ زراعية ومنزلين أحدهما في حي السلام والآخر في منطقة حي تل سلطان في مدينة رفح في قطاع غزة، قد أسفرت عن اسشهاد 10 فلسطينيين بينهم 8 أطفال، وإصابة آخرين.
+
+            وذكر الدفاع المدني في غزة في بيان، أن طواقمه ما زالت تحاول انتشال عدد من الشهداء والمفقودين، بعد استهداف طائرات الاحتلال لشقة سكنية لعائلة رضوان، قرب الإسكان الأحمر، في حي تل السلطان، غربي رفح</p>
+        <div class="d-flex justify-content-between align-items-center">
+            <div class="sol">
+                <div class="view">
+                    <i class="fa-solid fa-eye"></i><small>120k</small>
+                </div>
+                <div class="heart">
+                    <i class="fa-solid fa-heart" id="heart3"></i><small>86k</small>
+                </div>
+
+                <div class="com">
+                    <i class="fa-solid fa-comment" data-bs-toggle="collapse" href="#collapseExample2" role="button" aria-expanded="false" aria-controls="collapseExample"></i><small>73k</small>
+                </div>
+            </div>
+        </div>
+<!-- اكتب تعليق -->
+            </p>
+            <div class="collapse" id="collapseExample2">
+            <div class="card card-body">
+
+                <form action="">
+                    <div class="mb-3" dir="rtl">
+                        <label for="exampleFormControlTextarea1" class="form-label">اكتب تعليق:</label>
+                        <br>
+                        <i class="fa-solid fa-user"></i><p style="display: inline-block; padding: 10px;">username</p>
+                        <br>
+                        <textarea class="form-control"  id="txt" rows="3"></textarea >
+                        <br>
+                        <div class="button"></div>
+                        <button type="submit" class="btn btn-primary" style="width: 100%;">نشر</button>
+            
+                    </div>
+                </form>
+
+            </div>
+            </div>
+
+<!-- اكتب تعليق -->
+      </div>
+    </div>
+  </div>
+<!-- مصق اخباري -->
+
+
+
+
+
+
+
+
+
+
+<!-- مصق اخباري -->
+<div class="col-12" style="display: flex; justify-content: center; margin: 10px 0;">
+    <div class="card shadow-sm" style="max-width: 800px;">
+        <img src="2024-04-18T113739Z_1152654350_RC2467A10YHD_RTRMADP_3_ISRAEL-PALESTINIANS-GAZA-SCHOOLS.jpg" alt="" >
+      <div class="card-body">
+        <p class="card-text" dir="rtl" style="margin: auto; text-align: right;">حذّر خبراء أمميون من إبادة تعليمية متعمدة في قطاع غزة عقب تدمير أكثر من 80% من مدارس القطاع الذي يتعرض لحرب إسرائيلية مدمرة منذ أكثر من نصف عام.
+
+            واستشهد أكثر من 5 آلاف طالب و250 معلمًا وحوالي 100 أستاذ جامعي، كما أصيب الآلاف منهم. إضافة إلى حرمان ما يفوق 600 ألف طالب من التعليم.</p>
+        <div class="d-flex justify-content-between align-items-center">
+            <div class="sol">
+                <div class="view">
+                    <i class="fa-solid fa-eye"></i><small>376k</small>
+                </div>
+                <div class="heart">
+                    <i class="fa-solid fa-heart" id="heart4"></i><small>196k</small>
+                </div>
+
+                <div class="com">
+                    <i class="fa-solid fa-comment" data-bs-toggle="collapse" href="#collapseExample3" role="button" aria-expanded="false" aria-controls="collapseExample"></i><small>134k</small>
+                </div>
+            </div>
+        </div>
+<!-- اكتب تعليق -->
+            </p>
+            <div class="collapse" id="collapseExample3">
+            <div class="card card-body">
+
+                <form action="">
+                    <div class="mb-3" dir="rtl">
+                        <label for="exampleFormControlTextarea1" class="form-label">اكتب تعليق:</label>
+                        <br>
+                        <i class="fa-solid fa-user"></i><p style="display: inline-block; padding: 10px;">username</p>
+                        <br>
+                        <textarea class="form-control"  id="txt" rows="3"></textarea >
+                        <br>
+                        <div class="button"></div>
+                        <button type="submit" class="btn btn-primary" style="width: 100%;">نشر</button>
+            
+                    </div>
+                </form>
+
+            </div>
+            </div>
+
+<!-- اكتب تعليق -->
+      </div>
+    </div>
+  </div>
+<!-- مصق اخباري -->
+
+
+
+
+
+
+<!-- مصق اخباري -->
+<div class="col-12" style="display: flex; justify-content: center; margin: 10px 0;">
+  <div class="card shadow-sm" style="max-width: 800px;">
+      <img src="AA-20240407-34213102-34213086-KHN_YWNS_SRYYL_TNSHB_MKHLF_LMWT_WLDMR.webp" alt="" >
+    <div class="card-body">
+      <p class="card-text" dir="rtl" style="margin: auto; text-align: right;">ندّدت الأمم المتحدة، اليوم الجمعة، بالتدمير المتعمد للمعدات الطبية المعقدة التي يصعب الحصول عليها في المستشفيات وأقسام الولادة التي ترزح تحت ضغوط هائلة في غزة، مما يزيد المخاطر التي تواجهها النساء اللواتي يلدن في "ظروف غير إنسانية ولا يمكن تصورها"</p>
+      <div class="d-flex justify-content-between align-items-center">
+          <div class="sol">
+              <div class="view">
+                  <i class="fa-solid fa-eye"></i><small>90k</small>
+              </div>
+              <div class="heart">
+                  <i class="fa-solid fa-heart" id="heart5"></i><small>14k</small>
+              </div>
+
+              <div class="com">
+                  <i class="fa-solid fa-comment" data-bs-toggle="collapse" href="#collapseExample4" role="button" aria-expanded="false" aria-controls="collapseExample"></i><small>10k</small>
+              </div>
+          </div>
+      </div>
+<!-- اكتب تعليق -->
+          </p>
+          <div class="collapse" id="collapseExample4">
+          <div class="card card-body">
+
+              <form action="">
+                  <div class="mb-3" dir="rtl">
+                      <label for="exampleFormControlTextarea1" class="form-label">اكتب تعليق:</label>
+                      <br>
+                      <i class="fa-solid fa-user"></i><p style="display: inline-block; padding: 10px;">username</p>
+                      <br>
+                      <textarea class="form-control"  id="txt" rows="3"></textarea >
+                      <br>
+                      <div class="button"></div>
+                      <button type="submit" class="btn btn-primary" style="width: 100%;">نشر</button>
+          
+                  </div>
+              </form>
+
+          </div>
+          </div>
+
+<!-- اكتب تعليق -->
+    </div>
+  </div>
+</div>
+<!-- مصق اخباري -->
+
+
+
+
+
+
+
+
+<!-- مصق اخباري -->
+<div class="col-12" style="display: flex; justify-content: center; margin: 10px 0;">
+  <div class="card shadow-sm" style="max-width: 800px;">
+      <img src="66622999.webp" alt="" >
+    <div class="card-body">
+      <p class="card-text" dir="rtl" style="margin: auto; text-align: right;">استشهد عدد من الشبان الفلسطينيين برصاص الاحتلال الإسرائيلي في مخيم نور شمس شرق مدينة طولكرم الذي ينفذ فيه جيش الاحتلال اقتحامًا واسعًا.
+
+        وأعلنت وزارة الصحة الفلسطينية استشهاد الطفل قيس فتحي نصر الله (16 عامًا) عقب إصابته بالرصاص الحي خلال اقتحام قوات الاحتلال الإسرائيلي طولكرم.</p>
+      <div class="d-flex justify-content-between align-items-center">
+          <div class="sol">
+              <div class="view">
+                  <i class="fa-solid fa-eye"></i><small>63k</small>
+              </div>
+              <div class="heart">
+                  <i class="fa-solid fa-heart" id="heart6"></i><small>11k</small>
+              </div>
+
+              <div class="com">
+                  <i class="fa-solid fa-comment" data-bs-toggle="collapse" href="#collapseExample5" role="button" aria-expanded="false" aria-controls="collapseExample"></i><small>8k</small>
+              </div>
+          </div>
+      </div>
+<!-- اكتب تعليق -->
+          </p>
+          <div class="collapse" id="collapseExample5">
+          <div class="card card-body">
+
+              <form action="">
+                  <div class="mb-3" dir="rtl">
+                      <label for="exampleFormControlTextarea1" class="form-label">اكتب تعليق:</label>
+                      <br>
+                      <i class="fa-solid fa-user"></i><p style="display: inline-block; padding: 10px;">username</p>
+                      <br>
+                      <textarea class="form-control"  id="txt" rows="3"></textarea >
+                      <br>
+                      <div class="button"></div>
+                      <button type="submit" class="btn btn-primary" style="width: 100%;">نشر</button>
+          
+                  </div>
+              </form>
+
+          </div>
+          </div>
+
+<!-- اكتب تعليق -->
+    </div>
+  </div>
+</div>
+<!-- مصق اخباري -->
+
+
+
+
+
+
+
+<!-- مصق اخباري -->
+<div class="col-12" style="display: flex; justify-content: center; margin: 10px 0;">
+  <div class="card shadow-sm" style="max-width: 800px;">
+      <img src="2024-04-15T175245Z_665250405_RC2177A00A64_RTRMADP_3_ISRAEL-PALESTINIANS.jpg" alt="" >
+    <div class="card-body">
+      <p class="card-text" dir="rtl" style="margin: auto; text-align: right;">أفادت مصادر طبية وإعلامية فلسطينية، اليوم السبت، بوقوع عدد من الشهداء والجرحى جراء غارات إسرائيلية على مناطق مختلفة من قطاع غزة.
+
+        ونقلت وكالة الأنباء الفلسطينية "وفا" عن مصادر طبية أنّ 6 مواطنين استشهدوا وأصيب عدد آخر إثر قصف مسيرة إسرائيلية لمنطقة الفالوجا بمخيم جباليا شمال قطاع غزة</p>
+      <div class="d-flex justify-content-between align-items-center">
+          <div class="sol">
+              <div class="view">
+                  <i class="fa-solid fa-eye"></i><small>63k</small>
+              </div>
+              <div class="heart">
+                  <i class="fa-solid fa-heart" id="heart7"></i><small>11k</small>
+              </div>
+
+              <div class="com">
+                  <i class="fa-solid fa-comment" data-bs-toggle="collapse" href="#collapseExample6" role="button" aria-expanded="false" aria-controls="collapseExample"></i><small>8k</small>
+              </div>
+          </div>
+      </div>
+<!-- اكتب تعليق -->
+          </p>
+          <div class="collapse" id="collapseExample6">
+          <div class="card card-body">
+
+              <form action="">
+                  <div class="mb-3" dir="rtl">
+                      <label for="exampleFormControlTextarea1" class="form-label">اكتب تعليق:</label>
+                      <br>
+                      <i class="fa-solid fa-user"></i><p style="display: inline-block; padding: 10px;">username</p>
+                      <br>
+                      <textarea class="form-control"  id="txt" rows="3"></textarea >
+                      <br>
+                      <div class="button"></div>
+                      <button type="submit" class="btn btn-primary" style="width: 100%;">نشر</button>
+          
+                  </div>
+              </form>
+
+          </div>
+          </div>
+
+<!-- اكتب تعليق -->
+    </div>
+  </div>
+</div>
+<!-- مصق اخباري -->
+
+
+
+
+
+<!-- مصق اخباري -->
+<div class="col-12" style="display: flex; justify-content: center; margin: 10px 0;">
+  <div class="card shadow-sm" style="max-width: 800px;">
+      <img src="2024-03-31T185040Z_1837961719_RC26X6AQERHW_RTRMADP_3_PALESTINIANS-POLITICS-GOVERNMENT.jpg" alt="" >
+    <div class="card-body">
+      <p class="card-text" dir="rtl" style="margin: auto; text-align: right;">وصف عباس الفيتو الأميركي بمجلس الأمن ضد طلب بلاده العضوية الكاملة بالأمم المتحدة بأنه "مخيب للآمال"، قائلًا: إن القيادة الفلسطينية ستعيد النظر في علاقاتها مع واشنطن.</p>
+      <div class="d-flex justify-content-between align-items-center">
+          <div class="sol">
+              <div class="view">
+                  <i class="fa-solid fa-eye"></i><small>63k</small>
+              </div>
+              <div class="heart">
+                  <i class="fa-solid fa-heart" id="heart8"></i><small>11k</small>
+              </div>
+
+              <div class="com">
+                  <i class="fa-solid fa-comment" data-bs-toggle="collapse" href="#collapseExample7" role="button" aria-expanded="false" aria-controls="collapseExample"></i><small>8k</small>
+              </div>
+          </div>
+      </div>
+<!-- اكتب تعليق -->
+          </p>
+          <div class="collapse" id="collapseExample7">
+          <div class="card card-body">
+
+              <form action="">
+                  <div class="mb-3" dir="rtl">
+                      <label for="exampleFormControlTextarea1" class="form-label">اكتب تعليق:</label>
+                      <br>
+                      <i class="fa-solid fa-user"></i><p style="display: inline-block; padding: 10px;">username</p>
+                      <br>
+                      <textarea class="form-control"  id="txt" rows="3"></textarea >
+                      <br>
+                      <div class="button"></div>
+                      <button type="submit" class="btn btn-primary" style="width: 100%;">نشر</button>
+          
+                  </div>
+              </form>
+
+          </div>
+          </div>
+
+<!-- اكتب تعليق -->
+    </div>
+  </div>
+</div>
+<!-- مصق اخباري -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- link -->   
+<h2 class="text-center p-2" style="display: flex;justify-content: center;display: flex;justify-content: center;margin: 40px auto;">تبرعات الي غزة</h2>
+<div class="link" style="width: 800px;">
+
+  <h4 style="text-align: center;">تبرعات مالية</h4>
+  <p style="font-size: 20px; margin: auto;">بعض الأشخاص المحتاجين الي تبرعات مالية</p>
+  <br>
+  <br>
+  <br>
+
+    <div class="d1">
+        <a href="https://www.gofundme.com/f/help-neveen-from-palestine-get-her-family-to-safety" target="_blank">Neveen</a>
+    </div>
+<hr>
+    <div class="d1">
+        <a href="https://www.gofundme.com/f/saedhabibfamily" target="_blank">Saed Habib</a>
+    </div>
+<hr>
+    <div class="d1">
+        <a href="https://www.gofundme.com/f/dyab-aldin" target="_blank">Diab's</a>
+    </div>
+<hr>
+    <div class="d1">
+        <a href="https://www.gofundme.com/f/eliass-life-changed" target="_blank">Elias's </a>
+    </div>
+<hr>
+    <div class="d1">
+        <a href="https://www.gofundme.com/f/i-dont-want-to-lose-anymore-of-my-family" target="_blank">Adam, Iyad</a>
+    </div>
+<hr>
+    <div class="d1">
+        <a href="https://www.gofundme.com/f/8sdyks-help-me-evacuate-my-family-from-gaza" target="_blank">Dr.Sanad</a>
+    </div>
+<hr>
+    <div class="d1">
+        <a href="https://www.gofundme.com/f/help-anas-yasmines-family-evacuate-rafah" target="_blank">Anas' Family </a>
+    </div>
+<hr>
+    <div class="d1">
+        <a href="https://www.gofundme.com/f/help-shadi-and-his-family-to-evacuate-from-gaza" target="_blank">Shadi</a>
+    </div>
+<hr>
+    <div class="d1">
+        <a href="https://www.gofundme.com/f/help-nada-and-her-family-to-survive-inGAZA" target="_blank">Nada and her family</a>
+    </div>
+<hr>
+    <div class="d1">
+        <a href="https://www.gofundme.com/f/jx9sg8-support-my-family-in-gaza" target="_blank">family in Gaza</a>
+    </div>
+<hr>
+    <div class="d1">
+        <a href="https://www.gofundme.com/f/help-karams-family-escape-gaza-palestine" target="_blank">Karam's family</a>
+    </div>
+<hr>
+    <div class="d1">
+        <a href="https://www.gofundme.com/f/help-renads-family-rebuild-home-in-gaza" target="_blank">Renad’s family</a>
+    </div>
+<hr>
+    <div class="d1">
+        <a href="https://www.gofundme.com/f/2ywfp3-palestine-gaza" target="_blank">family in Gaza</a>
+    </div>
+<hr>
+    <div class="d1">
+        <a href="https://www.gofundme.com/f/help-wafa-12-year-old-in-palestine-rafah" target="_blank">Wafa</a>
+    </div>
+<hr>
+    <div class="d1">
+        <a href="https://www.gofundme.com/f/j37nn5-help-me-to-evacuate-my-family" target="_blank">family in Gaza</a>
+    </div>
+<hr>
+    <div class="d1">
+        <a href="https://www.gofundme.com/f/help-for-my-family-in-palestine" target="_blank">family in Gaza</a>
+    </div>
+<hr>
+    <div class="d1">
+        <a href="https://www.gofundme.com/f/supporting-ola-and-family-in-occupied-palestine" target="_blank">Ola</a>
+    </div>
+<hr>
+    <div class="d1">
+        <a href="https://www.gofundme.com/f/ghandour-family-gaza" target="_blank">Ghandour</a>
+    </div>
+<hr>
+    <div class="d1">
+        <a href="https://www.gofundme.com/f/Save-my-kids-in-Gaza-Palestine" target="_blank">kids in Gaza</a>
+    </div>
+<hr>
+    <div class="d1">
+        <a href="https://www.gofundme.com/f/i-could-do-with-your-help-to-reach-my-fundraising" target="_blank">family in Gaza</a>
+    </div>
+<hr>
+    <div class="d1">
+        <a href="https://www.gofundme.com/f/orphan-health-wellbeing-by-children-of-palestine" target="_blank">kids in Gaza</a>
+    </div>
+<hr>
+    <div class="d1">
+        <a href="https://www.gofundme.com/f/wr5da-palestine-gaza" target="_blank">family in Gaza</a>
+    </div>
+    <hr>
+<h4 style="text-align: center;">تبرعات بالدم</h4>
+<p style="font-size: 20px; margin: auto;">عناوين وتليفونات بنوك الدم التابعة للهلال الأحمر المصري</p>
+<br>
+<br>
+<br>
+<div class="row">
+  <div class="col" dir="rtl" style="padding: 50px;">
+    <p dir="rtl" style="text-align: right; font-size: 16px;">
+      <span>القاهرة</span><br>
+      بنك الدم المركزي<br>
+      عنوان: 29 شارع الجلاء (أمام قسم الأزبكية)- رمسيس<br>
+      ت: 25744915 - 25742667
+<br>
+    </p>
+<hr>
+    <p dir="rtl" style="text-align: right; font-size: 16px;">
+      <span>الإسكندرية</span><br>
+      بنك دم الهلال الأحمر المصري<br>
+      عنوان:154 شارع السوق (باكوس)- الإسكندرية<br>
+      ت : 035030230 - 035030502
+<br>
+    </p>
+
+
+    <hr>
+    <p dir="rtl" style="text-align: right; font-size: 16px;">
+      <span>الغربية</span><br>
+      بنك دم الهلال الأحمر المصري <br>
+      عنوان: شارع عتمان محمد- طنطا<br>
+      ت: 0403335874 - 0403359990<br>
+    </p>
+
+    <hr>
+    <p dir="rtl" style="text-align: right; font-size: 16px;">
+      <span>البحيرة</span><br>
+      بنك دم الهلال الأحمر المصري <br>
+      عنوان: شارع الجيش (مشتل كرم- بجوار نادي الكهرباء)- دمنهور<br>
+      ت : 0453316496 - 0453331685<br>
+    </p>
+    <hr>
+    <p dir="rtl" style="text-align: right; font-size: 16px;">
+      <span>قنا</span><br>
+      بنك دم الهلال الأحمر المصري <br>
+      عنوان: شارع الهلال- قنا<br>
+      ت : 0965325720 - 096532514<br>
+    </p>
+  </div>
+</div>
+
+
+
+
+
+
+
+</div>
+<!-- link -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <div class="container">
+      <footer class="py-3 my-4">
+        <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+          <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Home</a></li>
+          <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Features</a></li>
+          <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Pricing</a></li>
+          <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">FAQs</a></li>
+          <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">About</a></li>
+        </ul>
+        <p class="text-center text-body-secondary">&copy; 2024 Soul of Palestine, Inc</p>
+      </footer>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="bootstrap.js"></script>
+    <script src="package.js"></script>
+    <script src="jquery-3.7.1.min.js"></script>
+    <script src="popper.min.js"></script>
+    <script>
+var heart1 = document.getElementById("heart1");
+var heart2 = document.getElementById("heart2");
+var heart3 = document.getElementById("heart3");
+var heart4 = document.getElementById("heart4");
+var heart5 = document.getElementById("heart5");
+var heart6 = document.getElementById("heart6");
+var heart7 = document.getElementById("heart7");
+var heart8 = document.getElementById("heart8");
+
+heart1.addEventListener("click", function() {
+    this.classList.toggle("red-heart");
+});
+
+heart2.addEventListener("click", function() {
+    this.classList.toggle("red-heart");
+});
+
+heart3.addEventListener("click", function() {
+    this.classList.toggle("red-heart");
+});
+heart4.addEventListener("click", function() {
+    this.classList.toggle("red-heart");
+});
+heart5.addEventListener("click", function() {
+    this.classList.toggle("red-heart");
+});
+heart6.addEventListener("click", function() {
+    this.classList.toggle("red-heart");
+});
+heart7.addEventListener("click", function() {
+    this.classList.toggle("red-heart");
+});
+heart8.addEventListener("click", function() {
+    this.classList.toggle("red-heart");
+});
+
+    </script>
+    <script>
+        const MIN_SPEED = 1.5
+const MAX_SPEED = 2.5
+
+function randomNumber(min, max) {
+  return Math.random() * (max - min) + min
+}
+
+class Blob {
+  constructor(el) {
+    this.el = el
+    const boundingRect = this.el.getBoundingClientRect()
+    this.size = boundingRect.width
+    this.initialX = randomNumber(0, window.innerWidth - this.size)
+    this.initialY = randomNumber(0, window.innerHeight - this.size)
+    this.el.style.top = `${this.initialY}px`
+    this.el.style.left = `${this.initialX}px`
+    this.vx =
+      randomNumber(MIN_SPEED, MAX_SPEED) * (Math.random() > 0.5 ? 1 : -1)
+    this.vy =
+      randomNumber(MIN_SPEED, MAX_SPEED) * (Math.random() > 0.5 ? 1 : -1)
+    this.x = this.initialX
+    this.y = this.initialY
+  }
+
+  update() {
+    this.x += this.vx
+    this.y += this.vy
+    if (this.x >= window.innerWidth - this.size) {
+      this.x = window.innerWidth - this.size
+      this.vx *= -1
+    }
+    if (this.y >= window.innerHeight - this.size) {
+      this.y = window.innerHeight - this.size
+      this.vy *= -1
+    }
+    if (this.x <= 0) {
+      this.x = 0
+      this.vx *= -1
+    }
+    if (this.y <= 0) {
+      this.y = 0
+      this.vy *= -1
+    }
+  }
+
+  move() {
+    this.el.style.transform = `translate(${this.x - this.initialX}px, ${
+      this.y - this.initialY
+    }px)`
+  }
+}
+
+function initBlobs() {
+  const blobEls = document.querySelectorAll('.bouncing-blob')
+  const blobs = Array.from(blobEls).map((blobEl) => new Blob(blobEl))
+
+  function update() {
+    requestAnimationFrame(update)
+    blobs.forEach((blob) => {
+      blob.update()
+      blob.move()
+    })
+  }
+
+  requestAnimationFrame(update)
+}
+
+initBlobs()
+
+    </script>
+</body>
+</html>

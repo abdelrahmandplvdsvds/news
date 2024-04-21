@@ -1,0 +1,52 @@
+small{
+    padding: 0 7px;
+    font-size: 24px;
+}
+.view{
+    padding: 7px;
+    font-size: 26px;
+
+}
+.heart{
+    padding: 7px;
+    font-size: 26px;
+
+}
+.com{
+    padding: 7px;
+    font-size: 26px;
+
+}
+.sol{
+    display: flex;
+    padding: 7px;
+
+}
+.com i:hover{
+    text-decoration: underline;
+}
+.fa-heart.red-heart {
+    color: red;
+}
+
+p{
+    font-size: 24px;
+}
+.link{
+    background: rgb(255, 255, 255);
+    width: 800px;
+    margin: auto;
+    border-radius: 4px;
+    padding: 20px;
+    border: 1px #dadada solid;
+}
+.link .d1 a{
+    text-decoration: none;
+    font-size: 20px;
+    padding: 20px;
+}
+
+.d1:hover{
+    text-decoration: underline rgb(0, 119, 255);
+}
+
